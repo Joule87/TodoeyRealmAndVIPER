@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommonTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="CommonTableViewCell" customModule="TodoeyRealmAndVIPER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKH-5S-D4R" userLabel="Label Container">
+                        <rect key="frame" x="0.0" y="5" width="320" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-tB-SXp" userLabel="Top Label">
+                                <rect key="frame" x="20" y="10" width="280" height="30.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLP-gD-FwJ" userLabel="Button Label">
+                                <rect key="frame" x="20" y="45.5" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WLP-gD-FwJ" firstAttribute="leading" secondItem="LKH-5S-D4R" secondAttribute="leading" constant="20" id="1hW-Wl-ll2"/>
+                            <constraint firstAttribute="bottom" secondItem="WLP-gD-FwJ" secondAttribute="bottom" constant="13" id="8LB-MD-7kv"/>
+                            <constraint firstItem="dNq-tB-SXp" firstAttribute="leading" secondItem="LKH-5S-D4R" secondAttribute="leading" constant="20" id="Lif-eY-lhH"/>
+                            <constraint firstItem="WLP-gD-FwJ" firstAttribute="top" secondItem="dNq-tB-SXp" secondAttribute="bottom" constant="5" id="N5t-xH-aQ5"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="70" id="STN-eo-JEf"/>
+                            <constraint firstAttribute="trailing" secondItem="WLP-gD-FwJ" secondAttribute="trailing" constant="20" id="h01-uP-J0V"/>
+                            <constraint firstAttribute="trailing" secondItem="dNq-tB-SXp" secondAttribute="trailing" constant="20" id="qI5-vH-LnO"/>
+                            <constraint firstItem="dNq-tB-SXp" firstAttribute="top" secondItem="LKH-5S-D4R" secondAttribute="top" constant="10" id="wdp-q3-4aG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LKH-5S-D4R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6rf-aI-IHY"/>
+                    <constraint firstItem="LKH-5S-D4R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CXc-jl-NOy"/>
+                    <constraint firstItem="LKH-5S-D4R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Y4o-QT-pJJ"/>
+                    <constraint firstAttribute="trailing" secondItem="LKH-5S-D4R" secondAttribute="trailing" id="dnO-aL-m4P"/>
+                    <constraint firstItem="LKH-5S-D4R" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="e2j-Pi-rPq"/>
+                    <constraint firstAttribute="bottom" secondItem="LKH-5S-D4R" secondAttribute="bottom" constant="5" id="vNj-j9-I5Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottonLabel" destination="WLP-gD-FwJ" id="QRt-0H-8AY"/>
+                <outlet property="topLabel" destination="dNq-tB-SXp" id="7Pc-Zc-lf2"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="50.223214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

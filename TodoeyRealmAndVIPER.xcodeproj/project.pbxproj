@@ -7,21 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5255B25D44E385F5C4546A /* Pods_TodoeyRealmAndVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85626BA92CD7C92124A99A8F /* Pods_TodoeyRealmAndVIPER.framework */; };
+		F4011AAE23355EE2002E762C /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4011AAD23355EE2002E762C /* RealmError.swift */; };
+		F425E78623350A7F001B2442 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E78423350A7F001B2442 /* CommonTableViewCell.swift */; };
+		F425E78723350A7F001B2442 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F425E78523350A7F001B2442 /* CommonTableViewCell.xib */; };
+		F425E78A23350E0C001B2442 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E78923350E0C001B2442 /* BaseViewController.swift */; };
+		F425E78E23350F26001B2442 /* RealmMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E78D23350F26001B2442 /* RealmMananger.swift */; };
+		F425E79123351063001B2442 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E79023351063001B2442 /* RealmExtension.swift */; };
+		F425E7942335239D001B2442 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E7932335239D001B2442 /* DateFormatter.swift */; };
+		F436D0092334107800149680 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D0082334107800149680 /* Constants.swift */; };
+		F436D00B233410EC00149680 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D00A233410EC00149680 /* CategoryViewController.swift */; };
+		F436D00D2334110000149680 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D00C2334110000149680 /* CategoryPresenter.swift */; };
+		F436D00F2334111400149680 /* CategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D00E2334111400149680 /* CategoryInteractor.swift */; };
+		F436D0112334112400149680 /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D0102334112400149680 /* CategoryRouter.swift */; };
+		F436D013233411C200149680 /* CategoryPresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D012233411C200149680 /* CategoryPresenterViewDelegate.swift */; };
+		F436D0152334135500149680 /* CategoryPresenterDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D0142334135500149680 /* CategoryPresenterDelegates.swift */; };
+		F436D017233415A900149680 /* CategoryPresenterRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D016233415A900149680 /* CategoryPresenterRouterDelegate.swift */; };
+		F436D019233416A700149680 /* CategoryPresenterInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D018233416A700149680 /* CategoryPresenterInteractorDelegate.swift */; };
+		F436D01C2334178500149680 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D01B2334178500149680 /* Category.swift */; };
+		F436D01E2334178E00149680 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D01D2334178E00149680 /* Item.swift */; };
 		F450CB3F23340D4E00B3271B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450CB3E23340D4E00B3271B /* AppDelegate.swift */; };
-		F450CB4123340D4E00B3271B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450CB4023340D4E00B3271B /* ViewController.swift */; };
 		F450CB4423340D4E00B3271B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F450CB4223340D4E00B3271B /* Main.storyboard */; };
 		F450CB4623340D4E00B3271B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F450CB4523340D4E00B3271B /* Assets.xcassets */; };
 		F450CB4923340D4E00B3271B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F450CB4723340D4E00B3271B /* LaunchScreen.storyboard */; };
+		F454C6CA23369B6100309DF7 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6C923369B6100309DF7 /* ItemViewController.swift */; };
+		F454C6CC2336B43800309DF7 /* ItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6CB2336B43800309DF7 /* ItemRouter.swift */; };
+		F454C6CE2336B44D00309DF7 /* ItemPresenterRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6CD2336B44D00309DF7 /* ItemPresenterRouterDelegate.swift */; };
+		F454C6D02336FA5300309DF7 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6CF2336FA5300309DF7 /* ItemPresenter.swift */; };
+		F454C6D22336FA6200309DF7 /* ItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D12336FA6200309DF7 /* ItemInteractor.swift */; };
+		F454C6D42336FB4400309DF7 /* ItemPresenterDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D32336FB4400309DF7 /* ItemPresenterDelegates.swift */; };
+		F454C6D62336FB5F00309DF7 /* ItemPresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D52336FB5F00309DF7 /* ItemPresenterViewDelegate.swift */; };
+		F454C6D82336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D72336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210F29BBBAB88455CF01279A /* Pods-TodoeyRealmAndVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoeyRealmAndVIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoeyRealmAndVIPER/Pods-TodoeyRealmAndVIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		47571BEA2CD532998EBC6C7C /* Pods-TodoeyRealmAndVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoeyRealmAndVIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoeyRealmAndVIPER/Pods-TodoeyRealmAndVIPER.release.xcconfig"; sourceTree = "<group>"; };
+		85626BA92CD7C92124A99A8F /* Pods_TodoeyRealmAndVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoeyRealmAndVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4011AAD23355EE2002E762C /* RealmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		F425E78423350A7F001B2442 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
+		F425E78523350A7F001B2442 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
+		F425E78923350E0C001B2442 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F425E78D23350F26001B2442 /* RealmMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmMananger.swift; path = ../../../../TodoeyUsingRealm/Todoey/Service/Store/RealmMananger.swift; sourceTree = "<group>"; };
+		F425E79023351063001B2442 /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmExtension.swift; path = ../../../../TodoeyUsingRealm/Todoey/Common/Extensions/RealmExtension.swift; sourceTree = "<group>"; };
+		F425E7932335239D001B2442 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		F436D0082334107800149680 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F436D00A233410EC00149680 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F436D00C2334110000149680 /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		F436D00E2334111400149680 /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
+		F436D0102334112400149680 /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
+		F436D012233411C200149680 /* CategoryPresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterViewDelegate.swift; sourceTree = "<group>"; };
+		F436D0142334135500149680 /* CategoryPresenterDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterDelegates.swift; sourceTree = "<group>"; };
+		F436D016233415A900149680 /* CategoryPresenterRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterRouterDelegate.swift; sourceTree = "<group>"; };
+		F436D018233416A700149680 /* CategoryPresenterInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterInteractorDelegate.swift; sourceTree = "<group>"; };
+		F436D01B2334178500149680 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F436D01D2334178E00149680 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F450CB3B23340D4E00B3271B /* TodoeyRealmAndVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoeyRealmAndVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F450CB3E23340D4E00B3271B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F450CB4023340D4E00B3271B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F450CB4323340D4E00B3271B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F450CB4523340D4E00B3271B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F450CB4823340D4E00B3271B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F450CB4A23340D4E00B3271B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F454C6C923369B6100309DF7 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		F454C6CB2336B43800309DF7 /* ItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRouter.swift; sourceTree = "<group>"; };
+		F454C6CD2336B44D00309DF7 /* ItemPresenterRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterRouterDelegate.swift; sourceTree = "<group>"; };
+		F454C6CF2336FA5300309DF7 /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
+		F454C6D12336FA6200309DF7 /* ItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInteractor.swift; sourceTree = "<group>"; };
+		F454C6D32336FB4400309DF7 /* ItemPresenterDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterDelegates.swift; sourceTree = "<group>"; };
+		F454C6D52336FB5F00309DF7 /* ItemPresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterViewDelegate.swift; sourceTree = "<group>"; };
+		F454C6D72336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterInteractorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +83,178 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5255B25D44E385F5C4546A /* Pods_TodoeyRealmAndVIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420E3E004BF31C2E583366A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85626BA92CD7C92124A99A8F /* Pods_TodoeyRealmAndVIPER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A7D75DAFAA38AB5EAE1DE72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				210F29BBBAB88455CF01279A /* Pods-TodoeyRealmAndVIPER.debug.xcconfig */,
+				47571BEA2CD532998EBC6C7C /* Pods-TodoeyRealmAndVIPER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4011AAB23355E94002E762C /* errors */ = {
+			isa = PBXGroup;
+			children = (
+				F4011AAD23355EE2002E762C /* RealmError.swift */,
+			);
+			path = errors;
+			sourceTree = "<group>";
+		};
+		F425E78023350A0E001B2442 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F425E78123350A19001B2442 /* cells */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F425E78123350A19001B2442 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F425E78423350A7F001B2442 /* CommonTableViewCell.swift */,
+				F425E78523350A7F001B2442 /* CommonTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		F425E78823350DF7001B2442 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F425E78923350E0C001B2442 /* BaseViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F425E78B23350EC7001B2442 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F425E78C23350ED0001B2442 /* Persistency */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F425E78C23350ED0001B2442 /* Persistency */ = {
+			isa = PBXGroup;
+			children = (
+				F425E78D23350F26001B2442 /* RealmMananger.swift */,
+			);
+			path = Persistency;
+			sourceTree = "<group>";
+		};
+		F425E78F23351045001B2442 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F425E79023351063001B2442 /* RealmExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		F425E79223352378001B2442 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F425E7932335239D001B2442 /* DateFormatter.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F436D00223340F6B00149680 /* category-module */ = {
+			isa = PBXGroup;
+			children = (
+				F436D0062334101300149680 /* protocols */,
+				F436D00A233410EC00149680 /* CategoryViewController.swift */,
+				F436D00C2334110000149680 /* CategoryPresenter.swift */,
+				F436D00E2334111400149680 /* CategoryInteractor.swift */,
+				F436D0102334112400149680 /* CategoryRouter.swift */,
+			);
+			path = "category-module";
+			sourceTree = "<group>";
+		};
+		F436D00323340F7A00149680 /* item-modelue */ = {
+			isa = PBXGroup;
+			children = (
+				F436D0052334100600149680 /* protocols */,
+				F454C6C923369B6100309DF7 /* ItemViewController.swift */,
+				F454C6CB2336B43800309DF7 /* ItemRouter.swift */,
+				F454C6CF2336FA5300309DF7 /* ItemPresenter.swift */,
+				F454C6D12336FA6200309DF7 /* ItemInteractor.swift */,
+			);
+			path = "item-modelue";
+			sourceTree = "<group>";
+		};
+		F436D00423340FD100149680 /* app-modules */ = {
+			isa = PBXGroup;
+			children = (
+				F436D00323340F7A00149680 /* item-modelue */,
+				F436D00223340F6B00149680 /* category-module */,
+			);
+			path = "app-modules";
+			sourceTree = "<group>";
+		};
+		F436D0052334100600149680 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F454C6CD2336B44D00309DF7 /* ItemPresenterRouterDelegate.swift */,
+				F454C6D32336FB4400309DF7 /* ItemPresenterDelegates.swift */,
+				F454C6D52336FB5F00309DF7 /* ItemPresenterViewDelegate.swift */,
+				F454C6D72336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		F436D0062334101300149680 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F436D012233411C200149680 /* CategoryPresenterViewDelegate.swift */,
+				F436D0142334135500149680 /* CategoryPresenterDelegates.swift */,
+				F436D016233415A900149680 /* CategoryPresenterRouterDelegate.swift */,
+				F436D018233416A700149680 /* CategoryPresenterInteractorDelegate.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		F436D0072334105400149680 /* common-utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4011AAB23355E94002E762C /* errors */,
+				F425E79223352378001B2442 /* utils */,
+				F425E78F23351045001B2442 /* extensions */,
+				F425E78823350DF7001B2442 /* controllers */,
+				F436D0082334107800149680 /* Constants.swift */,
+			);
+			path = "common-utils";
+			sourceTree = "<group>";
+		};
+		F436D01A2334174D00149680 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				F436D01B2334178500149680 /* Category.swift */,
+				F436D01D2334178E00149680 /* Item.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
 		F450CB3223340D4E00B3271B = {
 			isa = PBXGroup;
 			children = (
 				F450CB3D23340D4E00B3271B /* TodoeyRealmAndVIPER */,
 				F450CB3C23340D4E00B3271B /* Products */,
+				6A7D75DAFAA38AB5EAE1DE72 /* Pods */,
+				420E3E004BF31C2E583366A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +269,12 @@
 		F450CB3D23340D4E00B3271B /* TodoeyRealmAndVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				F425E78B23350EC7001B2442 /* service */,
+				F425E78023350A0E001B2442 /* ui */,
+				F436D01A2334174D00149680 /* entities */,
+				F436D0072334105400149680 /* common-utils */,
+				F436D00423340FD100149680 /* app-modules */,
 				F450CB3E23340D4E00B3271B /* AppDelegate.swift */,
-				F450CB4023340D4E00B3271B /* ViewController.swift */,
 				F450CB4223340D4E00B3271B /* Main.storyboard */,
 				F450CB4523340D4E00B3271B /* Assets.xcassets */,
 				F450CB4723340D4E00B3271B /* LaunchScreen.storyboard */,
@@ -71,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F450CB4D23340D4E00B3271B /* Build configuration list for PBXNativeTarget "TodoeyRealmAndVIPER" */;
 			buildPhases = (
+				2F47CCC3D97587BD7735378D /* [CP] Check Pods Manifest.lock */,
 				F450CB3723340D4E00B3271B /* Sources */,
 				F450CB3823340D4E00B3271B /* Frameworks */,
 				F450CB3923340D4E00B3271B /* Resources */,
+				2E2BF4769849386A67936C3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F425E78723350A7F001B2442 /* CommonTableViewCell.xib in Resources */,
 				F450CB4923340D4E00B3271B /* LaunchScreen.storyboard in Resources */,
 				F450CB4623340D4E00B3271B /* Assets.xcassets in Resources */,
 				F450CB4423340D4E00B3271B /* Main.storyboard in Resources */,
@@ -130,13 +352,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E2BF4769849386A67936C3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TodoeyRealmAndVIPER/Pods-TodoeyRealmAndVIPER-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodoeyRealmAndVIPER/Pods-TodoeyRealmAndVIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F47CCC3D97587BD7735378D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodoeyRealmAndVIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F450CB3723340D4E00B3271B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F450CB4123340D4E00B3271B /* ViewController.swift in Sources */,
+				F425E78E23350F26001B2442 /* RealmMananger.swift in Sources */,
+				F454C6D82336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift in Sources */,
+				F454C6D02336FA5300309DF7 /* ItemPresenter.swift in Sources */,
+				F436D00F2334111400149680 /* CategoryInteractor.swift in Sources */,
+				F436D017233415A900149680 /* CategoryPresenterRouterDelegate.swift in Sources */,
+				F454C6D62336FB5F00309DF7 /* ItemPresenterViewDelegate.swift in Sources */,
+				F454C6CC2336B43800309DF7 /* ItemRouter.swift in Sources */,
+				F425E78623350A7F001B2442 /* CommonTableViewCell.swift in Sources */,
+				F436D00B233410EC00149680 /* CategoryViewController.swift in Sources */,
+				F436D0112334112400149680 /* CategoryRouter.swift in Sources */,
+				F425E78A23350E0C001B2442 /* BaseViewController.swift in Sources */,
+				F425E7942335239D001B2442 /* DateFormatter.swift in Sources */,
+				F4011AAE23355EE2002E762C /* RealmError.swift in Sources */,
+				F454C6CA23369B6100309DF7 /* ItemViewController.swift in Sources */,
+				F436D00D2334110000149680 /* CategoryPresenter.swift in Sources */,
+				F436D0152334135500149680 /* CategoryPresenterDelegates.swift in Sources */,
+				F436D01E2334178E00149680 /* Item.swift in Sources */,
+				F436D019233416A700149680 /* CategoryPresenterInteractorDelegate.swift in Sources */,
+				F454C6D22336FA6200309DF7 /* ItemInteractor.swift in Sources */,
+				F454C6CE2336B44D00309DF7 /* ItemPresenterRouterDelegate.swift in Sources */,
+				F436D013233411C200149680 /* CategoryPresenterViewDelegate.swift in Sources */,
 				F450CB3F23340D4E00B3271B /* AppDelegate.swift in Sources */,
+				F454C6D42336FB4400309DF7 /* ItemPresenterDelegates.swift in Sources */,
+				F425E79123351063001B2442 /* RealmExtension.swift in Sources */,
+				F436D0092334107800149680 /* Constants.swift in Sources */,
+				F436D01C2334178500149680 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +517,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -274,16 +572,18 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F450CB4E23340D4E00B3271B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210F29BBBAB88455CF01279A /* Pods-TodoeyRealmAndVIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ACA42AA29E;
+				DEVELOPMENT_TEAM = SN83FZJ9R5;
 				INFOPLIST_FILE = TodoeyRealmAndVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,16 +592,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.TodoeyRealmAndVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F450CB4F23340D4E00B3271B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47571BEA2CD532998EBC6C7C /* Pods-TodoeyRealmAndVIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ACA42AA29E;
+				DEVELOPMENT_TEAM = SN83FZJ9R5;
 				INFOPLIST_FILE = TodoeyRealmAndVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +611,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.TodoeyRealmAndVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
