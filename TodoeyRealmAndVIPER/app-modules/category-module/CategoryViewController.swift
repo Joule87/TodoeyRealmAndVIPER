@@ -28,7 +28,7 @@ class CategoryViewController: BaseViewController {
     
     @objc func addCategory() {
         var textField = UITextField()
-        let alertController = UIAlertController(title: "Add Category", message: "", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Add Category", message: nil, preferredStyle: .alert)
         alertController.addTextField { (alertTextField) in
             alertTextField.placeholder = "Add a category"
             textField = alertTextField

@@ -9,7 +9,6 @@
 import Foundation
 import RealmSwift
 //MARK:- CategoryView -> CategoryPresenter
-
 protocol CategoryViewPresenterDelegate {
     func notifyViewLoaded()
     func notifyViewWillAppear()
@@ -21,7 +20,6 @@ protocol CategoryViewPresenterDelegate {
 //MARK:- CategoryInteractor -> CategoryPresenter
 protocol CategoryInteractorPresenterDelegate: AnyObject {
     func categoryFetched(_ categoryList: Results<Category>)
-    func categoryFetchFailed()
     func requestCompleted()
     func requestFailed(error: RealmError)
 }

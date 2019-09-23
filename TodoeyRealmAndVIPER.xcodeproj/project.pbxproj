@@ -37,6 +37,7 @@
 		F454C6D42336FB4400309DF7 /* ItemPresenterDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D32336FB4400309DF7 /* ItemPresenterDelegates.swift */; };
 		F454C6D62336FB5F00309DF7 /* ItemPresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D52336FB5F00309DF7 /* ItemPresenterViewDelegate.swift */; };
 		F454C6D82336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C6D72336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift */; };
+		F45B6626233937CD00DE52D4 /* MainAppViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B6625233937CD00DE52D4 /* MainAppViewAssembler.swift */; };
 		F480DB9C2338376F001FC1F0 /* RealmMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F480DB9B2338376F001FC1F0 /* RealmMananger.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		F454C6D32336FB4400309DF7 /* ItemPresenterDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterDelegates.swift; sourceTree = "<group>"; };
 		F454C6D52336FB5F00309DF7 /* ItemPresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterViewDelegate.swift; sourceTree = "<group>"; };
 		F454C6D72336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterInteractorDelegate.swift; sourceTree = "<group>"; };
+		F45B6625233937CD00DE52D4 /* MainAppViewAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewAssembler.swift; sourceTree = "<group>"; };
 		F480DB9B2338376F001FC1F0 /* RealmMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMananger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F425E7932335239D001B2442 /* DateFormatter.swift */,
+				F45B6625233937CD00DE52D4 /* MainAppViewAssembler.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				F436D013233411C200149680 /* CategoryPresenterViewDelegate.swift in Sources */,
 				F450CB3F23340D4E00B3271B /* AppDelegate.swift in Sources */,
 				F454C6D42336FB4400309DF7 /* ItemPresenterDelegates.swift in Sources */,
+				F45B6626233937CD00DE52D4 /* MainAppViewAssembler.swift in Sources */,
 				F425E79123351063001B2442 /* RealmExtension.swift in Sources */,
 				F436D0092334107800149680 /* Constants.swift in Sources */,
 				F436D01C2334178500149680 /* Category.swift in Sources */,

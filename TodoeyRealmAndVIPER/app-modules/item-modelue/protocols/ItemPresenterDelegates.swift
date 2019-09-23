@@ -17,6 +17,7 @@ protocol ItemViewPresenterDelegate {
     func didSelectItem(_ indexPath: IndexPath)
     func addNewItem(name: String, done: Bool)
     func getItemList() -> Results<Item>?
+    func searchItems(for title: String)
 }
 
 //MARK:- ItemInteractor -> ItemPresenter

@@ -46,8 +46,4 @@ extension CategoryRouter: CategoryPresenterRouterDelegate {
         navigationController.pushViewController(itemViewController, animated: true)
     }
     
-    func popBack() {
-        
-    }
-    
 }

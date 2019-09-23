@@ -14,6 +14,9 @@ class ItemPresenter {
     var router: ItemPresenterRouterDelegate?
     var interactor: ItemPresenterInteractorDelegate?
     var selectedCategory: Category?
+    private var searchPredicate: NSPredicate?
+    private var debounce_timer: Timer?
+    private var itemList: Results<Item>?
 }
 
 extension ItemPresenter: ItemViewPresenterDelegate {
@@ -26,10 +29,10 @@ extension ItemPresenter: ItemViewPresenterDelegate {
     }
     
     func didSelectItem(_ indexPath: IndexPath) {
-        guard let parentCategory = selectedCategory else {
+        guard let items = itemList else {
             return
         }
-        interactor?.update(item: parentCategory.items[indexPath.row])
+        interactor?.update(item: items[indexPath.row])
     }
     
     func addNewItem(name: String, done: Bool) {
@@ -48,9 +51,32 @@ extension ItemPresenter: ItemViewPresenterDelegate {
             return nil
         }
         view?.hideEmptyView(true)
-        return category.items.sorted(byKeyPath: "title", ascending: true)
+        if let predicate = searchPredicate {
+            itemList = category.items.filter(predicate).sorted(byKeyPath: "title", ascending: true)
+        } else {
+            itemList = category.items.sorted(byKeyPath: "title", ascending: true)
+        }
+        return itemList
     }
     
+    func searchItems(for title: String) {
+        debounceSearch {
+            if title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                self.searchPredicate = nil
+            } else {
+                self.searchPredicate = NSPredicate(format: "title CONTAINS[cd] %@", title)
+            }
+            self.view?.reloadData()
+        }
+
+    }
+    
+    func debounceSearch(action: @escaping ()->()) {
+        debounce_timer?.invalidate()
+        debounce_timer = Timer.scheduledTimer(withTimeInterval: 0.50, repeats: false, block: { _ in
+            action()
+        })
+    }
     
 }
 

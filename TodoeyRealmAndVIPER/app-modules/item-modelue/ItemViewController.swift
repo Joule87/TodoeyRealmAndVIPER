@@ -12,6 +12,7 @@ class ItemViewController: BaseViewController {
     
     @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     static let viewControllerIdentifier = "ItemViewController"
     private let ITEM_SCREEN_TITLE = "Items"
@@ -86,16 +87,26 @@ extension ItemViewController: ItemPresenterViewDelegate {
     }
     
     func setupUIViewElements() {
+        let searchPlaceHolderBar = "Search Item"
         itemTableView.register(UINib(nibName: CommonTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: CommonTableViewCell.cellIdentifier)
         itemTableView.rowHeight = UITableView.automaticDimension
         emptyView.isHidden = true
         title = ITEM_SCREEN_TITLE
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
+        searchBar.placeholder = searchPlaceHolderBar
     }
     
     func reloadData() {
         itemTableView.reloadData()
     }
     
+}
+    
+extension ItemViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if let content = searchBar.searchTextField.text {
+            presenter?.searchItems(for: content)
+        }
+    }
     
 }

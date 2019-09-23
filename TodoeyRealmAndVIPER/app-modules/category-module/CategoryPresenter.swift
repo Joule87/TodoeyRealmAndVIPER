@@ -13,7 +13,6 @@ class CategoryPresenter {
     weak var view: CategoryPresenterViewDelegate?
     var router: CategoryPresenterRouterDelegate?
     var interactor: CategoryPresenterInteractorDelegate?
-    
     private var categoryList: Results<Category>?
 }
 
@@ -25,7 +24,7 @@ extension CategoryPresenter: CategoryViewPresenterDelegate {
     
     func notifyViewWillAppear() {
         view?.showLoading()
-        //Simulate a query delay for seeing the Loading component, just for testing purpose
+        //Simulating a query delay for seeing the Loading component, just for testing purpose
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
             self.interactor?.fetchCategoryList()
         }
@@ -53,7 +52,7 @@ extension CategoryPresenter: CategoryInteractorPresenterDelegate {
     }
     
     func requestFailed(error: RealmError) {
-        print("Error: \(error)")
+        print("ERROR: \(error)")
     }
     
     func categoryFetched(_ categoryList: Results<Category>) {
@@ -61,10 +60,5 @@ extension CategoryPresenter: CategoryInteractorPresenterDelegate {
         view?.reloadData()
         view?.hideLoading()
     }
-    
-    func categoryFetchFailed() {
-        //TODO:- Proccess failure
-    }
-    
     
 }

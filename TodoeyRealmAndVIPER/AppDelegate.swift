@@ -12,20 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    func setMainScreen() {
-        let navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.backgroundColor = .cyan
-        let categoryViewController = CategoryRouter.createModule(on: navigationController)
-        navigationController.viewControllers = [categoryViewController]
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-    }
+    let mainViewAssembler = MainAppViewAssembler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setMainScreen()
+        mainViewAssembler.setMainScreen(on: &window)
         return true
     }
 

@@ -56,6 +56,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="f9e-Li-2fn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="H76-B2-B5h" id="cF3-a9-GXT"/>
+                                    </connections>
+                                </searchBar>
                                 <connections>
                                     <outlet property="dataSource" destination="H76-B2-B5h" id="3fH-Ea-V4r"/>
                                     <outlet property="delegate" destination="H76-B2-B5h" id="g64-xw-UMo"/>
@@ -94,6 +102,7 @@
                     <connections>
                         <outlet property="emptyView" destination="658-3Q-Ekh" id="3Sq-f8-LSt"/>
                         <outlet property="itemTableView" destination="0Rq-4j-kTJ" id="ugL-sx-YGY"/>
+                        <outlet property="searchBar" destination="f9e-Li-2fn" id="vWK-2d-gwx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gkc-z9-eCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
