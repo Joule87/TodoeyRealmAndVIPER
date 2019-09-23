@@ -20,6 +20,12 @@ class ItemPresenter {
 }
 
 extension ItemPresenter: ItemViewPresenterDelegate {
+    func deleteItem(at indexPath: IndexPath) {
+        if let item = itemList?[indexPath.row] {
+            interactor?.delete(item: item)
+        }
+    }
+    
     func notifyViewDidLoad() {
         view?.setupUIViewElements()
     }

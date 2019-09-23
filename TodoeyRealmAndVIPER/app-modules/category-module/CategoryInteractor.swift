@@ -16,7 +16,7 @@ class CategoryInteractor {
 
 extension CategoryInteractor: CategoryPresenterInteractorDelegate {
     func delete(category: Category) {
-        //TODO:- Delete category
+        service.remove(category, cascading: true)
     }
     
     func saveCategory(category: Category) {

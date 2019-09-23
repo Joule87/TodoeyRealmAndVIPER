@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class ItemViewController: BaseViewController {
     
@@ -47,6 +48,10 @@ class ItemViewController: BaseViewController {
           alertController.addAction(cancelAction)
           present(alertController, animated: true)
     }
+    
+    override func updateModel(indexPath: IndexPath) {
+        presenter?.deleteItem(at: indexPath)
+    }
 }
 
 extension ItemViewController: UITableViewDelegate, UITableViewDataSource {
@@ -56,6 +61,7 @@ extension ItemViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = itemTableView.dequeueReusableCell(withIdentifier: CommonTableViewCell.cellIdentifier) as! CommonTableViewCell
+        cell.delegate = self
         guard let itemList = presenter?.getItemList() else {
             return cell
         }

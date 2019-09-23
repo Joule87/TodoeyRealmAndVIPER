@@ -17,6 +17,11 @@ class CategoryPresenter {
 }
 
 extension CategoryPresenter: CategoryViewPresenterDelegate {
+    func deleteCategory(at indexPath: IndexPath) {
+        if let category = categoryList?[indexPath.row] {
+            interactor?.delete(category: category)
+        }
+    }
     
     func notifyViewLoaded() {
         view?.setupUIViewElements()

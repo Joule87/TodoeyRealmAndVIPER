@@ -28,7 +28,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "categoryFetched(_:)"
+            landmarkName = "requestFailed(error:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -61,7 +61,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "categorySelected(_:)"
+            landmarkName = "addNewCategory(categoryName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -75,8 +75,8 @@
             filePath = "TodoeyRealmAndVIPER/app-modules/item-modelue/ItemViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "hideEmptyView(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -91,8 +91,8 @@
             filePath = "TodoeyRealmAndVIPER/app-modules/item-modelue/ItemPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "didSelectItem(_:)"
             landmarkType = "7">
          </BreakpointContent>

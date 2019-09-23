@@ -15,6 +15,7 @@ protocol CategoryViewPresenterDelegate {
     func addNewCategory(categoryName: String)
     func categorySelected(_ indexPath: IndexPath)
     func getCategoryList() -> Results<Category>?
+    func deleteCategory(at indexPath: IndexPath)
 }
 
 //MARK:- CategoryInteractor -> CategoryPresenter

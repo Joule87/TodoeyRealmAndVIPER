@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class CommonTableViewCell: UITableViewCell {
+class CommonTableViewCell: SwipeTableViewCell {
 
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottonLabel: UILabel!

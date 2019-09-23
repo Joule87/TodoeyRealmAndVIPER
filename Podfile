@@ -8,4 +8,5 @@ target 'TodoeyRealmAndVIPER' do
   # Pods for TodoeyRealmAndVIPER
 pod 'RealmSwift'
 pod 'SVProgressHUD'
+pod 'SwipeCellKit'
 end

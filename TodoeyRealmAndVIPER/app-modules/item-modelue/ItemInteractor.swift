@@ -26,11 +26,10 @@ extension ItemInteractor: ItemPresenterInteractorDelegate {
             parentCategory.items.append(item)
         }
         presenter?.requestCompleted()
-        
     }
     
     func delete(item: Item) {
-        //Delete Item
+        service.remove(item, cascading: true)
     }
     
     

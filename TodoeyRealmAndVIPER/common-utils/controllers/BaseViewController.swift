@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import SwipeCellKit
 
 class BaseViewController: UIViewController {
     
@@ -24,4 +25,32 @@ class BaseViewController: UIViewController {
         }
     }
     
+    //Override at view controllers children in order to update model
+    func updateModel(indexPath: IndexPath) {
+        
+    }
+    
+}
+
+extension BaseViewController: SwipeTableViewCellDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { [weak self] action, indexPath in
+            if let saveSelf = self {
+                saveSelf.updateModel(indexPath: indexPath)
+            }
+        }
+        
+        deleteAction.image = UIImage(named: CONSTANTS.ICONS_NAME.DELETE_ICON)
+
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
+        var options = SwipeOptions()
+        options.expansionStyle = .destructive
+        options.transitionStyle = .border
+        return options
+    }
 }

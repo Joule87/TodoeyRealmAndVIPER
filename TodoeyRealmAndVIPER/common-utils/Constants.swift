@@ -9,5 +9,7 @@
 import Foundation
 
 struct CONSTANTS {
-
+    struct ICONS_NAME {
+        static let DELETE_ICON = "deleteIcon"
+    }
 }

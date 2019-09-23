@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CCB6D0D5C2CB5113665AE98F57F72C3E"
+               BlueprintIdentifier = "0C20469101EBCAE7628E2C91C0EF8BB9"
                BuildableName = "Pods_TodoeyRealmAndVIPER.framework"
                BlueprintName = "Pods-TodoeyRealmAndVIPER"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCB6D0D5C2CB5113665AE98F57F72C3E"
-            BuildableName = "Pods_TodoeyRealmAndVIPER.framework"
-            BlueprintName = "Pods-TodoeyRealmAndVIPER"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

@@ -5,22 +5,26 @@ PODS:
   - RealmSwift (3.18.0):
     - Realm (= 3.18.0)
   - SVProgressHUD (2.2.5)
+  - SwipeCellKit (2.7.0)
 
 DEPENDENCIES:
   - RealmSwift
   - SVProgressHUD
+  - SwipeCellKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Realm
     - RealmSwift
     - SVProgressHUD
+    - SwipeCellKit
 
 SPEC CHECKSUMS:
   Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
   RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwipeCellKit: cfcdcbfb739734e494c9d3832a7b6e6f9411e1fd
 
-PODFILE CHECKSUM: 64bb0308214a1bd4e84377ae18d1de9a965f97b1
+PODFILE CHECKSUM: 2b3cf0c0640c40c7c8f30daed2ae66e6db1a2dd3
 
 COCOAPODS: 1.5.3
