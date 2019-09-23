@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setMainScreen() {
         let navigationController = UINavigationController()
         navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.backgroundColor = .cyan
         let categoryViewController = CategoryRouter.createModule(on: navigationController)
         navigationController.viewControllers = [categoryViewController]
         window = UIWindow(frame: UIScreen.main.bounds)

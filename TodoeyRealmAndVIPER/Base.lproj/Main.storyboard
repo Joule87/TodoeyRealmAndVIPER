@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Rq-4j-kTJ" userLabel="Table View Item">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -82,12 +82,12 @@
                         <constraints>
                             <constraint firstItem="dbq-uU-Jmy" firstAttribute="bottom" secondItem="658-3Q-Ekh" secondAttribute="bottom" id="3Lk-CW-f7o"/>
                             <constraint firstItem="658-3Q-Ekh" firstAttribute="top" secondItem="dbq-uU-Jmy" secondAttribute="top" id="54v-WR-EyO"/>
-                            <constraint firstItem="0Rq-4j-kTJ" firstAttribute="leading" secondItem="dbq-uU-Jmy" secondAttribute="leading" id="5ge-w8-LGR"/>
-                            <constraint firstItem="dbq-uU-Jmy" firstAttribute="bottom" secondItem="0Rq-4j-kTJ" secondAttribute="bottom" id="BtI-AM-auh"/>
+                            <constraint firstAttribute="trailing" secondItem="0Rq-4j-kTJ" secondAttribute="trailing" id="IuA-xt-5Mb"/>
                             <constraint firstItem="658-3Q-Ekh" firstAttribute="leading" secondItem="dbq-uU-Jmy" secondAttribute="leading" id="Tpm-WJ-sE0"/>
+                            <constraint firstItem="0Rq-4j-kTJ" firstAttribute="top" secondItem="z84-mr-L6h" secondAttribute="top" id="YL5-7v-05A"/>
+                            <constraint firstAttribute="bottom" secondItem="0Rq-4j-kTJ" secondAttribute="bottom" id="YZg-rM-lyg"/>
+                            <constraint firstItem="0Rq-4j-kTJ" firstAttribute="leading" secondItem="z84-mr-L6h" secondAttribute="leading" id="iP2-5d-4Dq"/>
                             <constraint firstItem="dbq-uU-Jmy" firstAttribute="trailing" secondItem="658-3Q-Ekh" secondAttribute="trailing" id="nd7-Ff-cCy"/>
-                            <constraint firstItem="dbq-uU-Jmy" firstAttribute="trailing" secondItem="0Rq-4j-kTJ" secondAttribute="trailing" id="tFH-cg-mzU"/>
-                            <constraint firstItem="0Rq-4j-kTJ" firstAttribute="top" secondItem="dbq-uU-Jmy" secondAttribute="top" id="tqL-vD-8i1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dbq-uU-Jmy"/>
                     </view>
@@ -102,6 +102,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="noDataAvailable" width="359" height="282"/>
+        <image name="noDataAvailable" width="359.5" height="282"/>
     </resources>
 </document>
