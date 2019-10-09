@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4D5255B25D44E385F5C4546A /* Pods_TodoeyRealmAndVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85626BA92CD7C92124A99A8F /* Pods_TodoeyRealmAndVIPER.framework */; };
 		F4011AAE23355EE2002E762C /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4011AAD23355EE2002E762C /* RealmError.swift */; };
+		F40F8469233CFB0300D2D409 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F8468233CFB0300D2D409 /* RealmExtension.swift */; };
 		F425E78623350A7F001B2442 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E78423350A7F001B2442 /* CommonTableViewCell.swift */; };
 		F425E78723350A7F001B2442 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F425E78523350A7F001B2442 /* CommonTableViewCell.xib */; };
 		F425E78A23350E0C001B2442 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E78923350E0C001B2442 /* BaseViewController.swift */; };
-		F425E79123351063001B2442 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E79023351063001B2442 /* RealmExtension.swift */; };
 		F425E7942335239D001B2442 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E7932335239D001B2442 /* DateFormatter.swift */; };
 		F436D0092334107800149680 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D0082334107800149680 /* Constants.swift */; };
 		F436D00B233410EC00149680 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436D00A233410EC00149680 /* CategoryViewController.swift */; };
@@ -46,10 +46,10 @@
 		47571BEA2CD532998EBC6C7C /* Pods-TodoeyRealmAndVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoeyRealmAndVIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoeyRealmAndVIPER/Pods-TodoeyRealmAndVIPER.release.xcconfig"; sourceTree = "<group>"; };
 		85626BA92CD7C92124A99A8F /* Pods_TodoeyRealmAndVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoeyRealmAndVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4011AAD23355EE2002E762C /* RealmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		F40F8468233CFB0300D2D409 /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
 		F425E78423350A7F001B2442 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		F425E78523350A7F001B2442 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
 		F425E78923350E0C001B2442 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F425E79023351063001B2442 /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmExtension.swift; path = ../../../../TodoeyUsingRealm/Todoey/Common/Extensions/RealmExtension.swift; sourceTree = "<group>"; };
 		F425E7932335239D001B2442 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		F436D0082334107800149680 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F436D00A233410EC00149680 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		F425E78F23351045001B2442 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F425E79023351063001B2442 /* RealmExtension.swift */,
+				F40F8468233CFB0300D2D409 /* RealmExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -413,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40F8469233CFB0300D2D409 /* RealmExtension.swift in Sources */,
 				F454C6D82336FB7C00309DF7 /* ItemPresenterInteractorDelegate.swift in Sources */,
 				F454C6D02336FA5300309DF7 /* ItemPresenter.swift in Sources */,
 				F436D00F2334111400149680 /* CategoryInteractor.swift in Sources */,
@@ -437,7 +438,6 @@
 				F450CB3F23340D4E00B3271B /* AppDelegate.swift in Sources */,
 				F454C6D42336FB4400309DF7 /* ItemPresenterDelegates.swift in Sources */,
 				F45B6626233937CD00DE52D4 /* MainAppViewAssembler.swift in Sources */,
-				F425E79123351063001B2442 /* RealmExtension.swift in Sources */,
 				F436D0092334107800149680 /* Constants.swift in Sources */,
 				F436D01C2334178500149680 /* Category.swift in Sources */,
 			);
