@@ -27,6 +27,7 @@ class ItemViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.notifyViewWillAppear()
+        animateReloadData(for: itemTableView)
     }
     
     @objc func addItem() {
@@ -99,6 +100,7 @@ extension ItemViewController: ItemPresenterViewDelegate {
         emptyView.isHidden = true
         title = ITEM_SCREEN_TITLE
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
+        navigationItem.rightBarButtonItem?.tintColor = .black
         searchBar.placeholder = searchPlaceHolderBar
     }
     

@@ -17,6 +17,7 @@ class CategoryViewController: BaseViewController {
     let CATEGORY_SCREEN_TITLE = "Categories"
     static let viewControllerIdentifier = "CategoryViewController"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.notifyViewLoaded()
@@ -91,10 +92,11 @@ extension CategoryViewController: CategoryPresenterViewDelegate {
         categoryTableView.rowHeight = UITableView.automaticDimension
         title = CATEGORY_SCREEN_TITLE
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCategory))
+        navigationItem.rightBarButtonItem?.tintColor = .black
     }
 
     func reloadData() {
-        categoryTableView.reloadData()
+        animateReloadData(for: categoryTableView)
     }
 
 }
